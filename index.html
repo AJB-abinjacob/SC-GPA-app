@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <br><br>
+                        <div class="S1_SGPA">
+                            <hr width="100%">
+                            <span></span>
+                            <h1 style="text-align:center;">S1</h1>
+                            <table class="table table-hover">
+
+                                <tr>
+                                    <th class="texthead">Subject Code</th>
+                                    <th class=texthead>Credit</th>
+                                    <th class=texthead>Grade</th>
+                                </tr>
+
+                                <tr>
+                                    <td><input class=text value="1001" readonly></td>
+                                    <td><input class=text value="3" id="credit_1001" readonly></td>
+                                    <td><select class=text name="" id="grade_1001">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="1002" readonly></td>
+                                    <td><input class=text value="6" id="credit_1002" readonly></td>
+                                    <td><select class=text name="" id="grade_1002">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="1003" readonly></td>
+                                    <td><input class=text value="3" id="credit_1003" readonly></td>
+                                    <td><select class=text name="" id="grade_1003">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="1004" readonly></td>
+                                    <td><input class=text value="3" id="credit_1004" readonly></td>
+                                    <td><select class=text name="" id="grade_1004">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="1008" readonly></td>
+                                    <td><input class=text value="4" id="credit_1008" readonly></td>
+                                    <td><select class=text name="" id="grade_1008">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="1009" readonly></td>
+                                    <td><input class=text value="2" id="credit_1009" readonly></td>
+                                    <td><select class=text name="" id="grade_1009">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                            </table>
+                            <div class="btn-result">
+                                <div class="check-btn" style="float: left;"><button type="button"
+                                        class="btn btn-outline-success" id="check_s1">Check ( S1 )</button>
+                                </div>
+                                <div class="sgpa-div-result-btn">
+                                    <p class="sgpa-result-btn" id="result_s1"></p>
+                                </div>
+                                <div class="cgpa-div-result-btn">
+                                    <p class="cgpa-result-btn" id="cgpa_result_s1">
+                                    </p>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <br><br>
+                        <div class="S2_SGPA">
+                            <hr width="100%">
+                            <span></span>
+                            <h1 style="text-align:center;">S2</h1>
+                            <table class="table table-hover">
+
+                                <tr>
+                                    <th class="texthead">Subject Code</th>
+                                    <th class=texthead>Credit</th>
+                                    <th class=texthead>Grade</th>
+                                </tr>
+
+                                <tr>
+                                    <td><input class=text value="2001" readonly></td>
+                                    <td><input class=text value="3" id="credit_2001" readonly></td>
+                                    <td><select class=text name="" id="grade_2001">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="2002" readonly></td>
+                                    <td><input class=text value="6" id="credit_2002" readonly></td>
+                                    <td><select class=text name="" id="grade_2002">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="2003" readonly></td>
+                                    <td><input class=text value="3" id="credit_2003" readonly></td>
+                                    <td><select class=text name="" id="grade_2003">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="2004" readonly></td>
+                                    <td><input class=text value="3" id="credit_2004" readonly></td>
+                                    <td><select class=text name="" id="grade_2004">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="2005" readonly></td>
+                                    <td><input class=text value="5" id="credit_2005" readonly></td>
+                                    <td><select class=text name="" id="grade_2005">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="2031" readonly></td>
+                                    <td><input class=text value="4" id="credit_2031" readonly></td>
+                                    <td><select class=text name="" id="grade_2031">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="2008" readonly></td>
+                                    <td><input class=text value="3" id="credit_2008" readonly></td>
+                                    <td><select class=text name="" id="grade_2008">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="2007" readonly></td>
+                                    <td><input class=text value="3" id="credit_2007" readonly></td>
+                                    <td><select class=text name="" id="grade_2007">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="2009" readonly></td>
+                                    <td><input class=text value="2" id="credit_2009" readonly></td>
+                                    <td><select class=text name="" id="grade_2009">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="2039" readonly></td>
+                                    <td><input class=text value="2" id="credit_2039" readonly></td>
+                                    <td><select class=text onchange="window.location.reload()" name="" id="grade_2039">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="btn-result">
+                                <div class="check-btn" style="float: left;"><button type="button"
+                                        class="btn btn-outline-success" id="check_s2">Check ( S2 )</button>
+                                </div>
+                                <div class="sgpa-div-result-btn">
+                                    <p class="sgpa-result-btn" id="result_s2"></p>
+                                </div>
+                                <div class="cgpa-div-result-btn">
+                                    <p class="cgpa-result-btn" id="cgpa_result_s2">
+                                    </p>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <br><br>
+                        <div class="S3_SGPA">
+                            <hr width="100%">
+                            <span></span>
+                            <h1 style="text-align:center;">S3</h1>
+                            <table class="table table-hover">
+
+                                <tr>
+                                    <th class="texthead">Subject Code</th>
+                                    <th class=texthead>Credit</th>
+                                    <th class=texthead>Grade</th>
+                                </tr>
+
+                                <tr>
+                                    <td><input class=text value="3001" readonly></td>
+                                    <td><input class=text value="3" id="credit_3001" readonly></td>
+                                    <td><select class=text name="" id="grade_3001">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="3031" readonly></td>
+                                    <td><input class=text value="4" id="credit_3031" readonly></td>
+                                    <td><select class=text name="" id="grade_3031">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="3032" readonly></td>
+                                    <td><input class=text value="5" id="credit_3032" readonly></td>
+                                    <td><select class=text name="" id="grade_3032">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="3033" readonly></td>
+                                    <td><input class=text value="4" id="credit_3033" readonly></td>
+                                    <td><select class=text name="" id="grade_3033">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="3034" readonly></td>
+                                    <td><input class=text value="4" id="credit_3034" readonly></td>
+                                    <td><select class=text name="" id="grade_3034">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="3037" readonly></td>
+                                    <td><input class=text value="3" id="credit_3037" readonly></td>
+                                    <td><select class=text name="" id="grade_3037">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="3038" readonly></td>
+                                    <td><input class=text value="2" id="credit_3038" readonly></td>
+                                    <td><select class=text name="" id="grade_3038">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="3039" readonly></td>
+                                    <td><input class=text value="4" id="credit_3039" readonly></td>
+                                    <td><select class=text name="" id="grade_3039">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="btn-result">
+                                <div class="check-btn" style="float: left;"><button type="button"
+                                        class="btn btn-outline-success" id="check_s3">Check ( S3 )</button>
+                                </div>
+                                <div class="sgpa-div-result-btn">
+                                    <p class="sgpa-result-btn" id="result_s3"></p>
+                                </div>
+                                <div class="sgpa-div-result-btn">
+                                    <p class="cgpa-result-btn" id="cgpa_result_s3">
+                                    </p>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <br><br>
+                        <div class="S4_SGPA">
+                            <hr width="100%">
+                            <span></span>
+                            <h1 style="text-align:center;">S4</h1>
+                            <table class="table table-hover">
+
+                                <tr>
+                                    <th class="texthead">Subject Code</th>
+                                    <th class=texthead>Credit</th>
+                                    <th class=texthead>Grade</th>
+                                </tr>
+
+                                <tr>
+                                    <td><input class=text value="4009" readonly></td>
+                                    <td><input class=text value="5" id="credit_4009" readonly></td>
+                                    <td><select class=text name="" id="grade_4009">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="4031" readonly></td>
+                                    <td><input class=text value="4" id="credit_4031" readonly></td>
+                                    <td><select class=text name="" id="grade_4031">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="4032" readonly></td>
+                                    <td><input class=text value="4" id="credit_4032" readonly></td>
+                                    <td><select class=text name="" id="grade_4032">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="4033" readonly></td>
+                                    <td><input class=text value="5" id="credit_4033" readonly></td>
+                                    <td><select class=text name="" id="grade_4033">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="4034" readonly></td>
+                                    <td><input class=text value="4" id="credit_4034" readonly></td>
+                                    <td><select class=text name="" id="grade_4034">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="4036" readonly></td>
+                                    <td><input class=text value="3" id="credit_4036" readonly></td>
+                                    <td><select class=text name="" id="grade_4036">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="4037" readonly></td>
+                                    <td><input class=text value="2" id="credit_4037" readonly></td>
+                                    <td><select class=text name="" id="grade_4037">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="4038" readonly></td>
+                                    <td><input class=text value="2" id="credit_4038" readonly></td>
+                                    <td><select class=text name="" id="grade_4038">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="4039" readonly></td>
+                                    <td><input class=text value="3" id="credit_4039" readonly></td>
+                                    <td><select class=text name="" id="grade_4039">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="btn-result">
+                                <div class="check-btn" style="float: left;"><button type="button"
+                                        class="btn btn-outline-success" id="check_s4">Check ( S4 )</button>
+                                </div>
+                                <div class="sgpa-div-result-btn">
+                                    <p class="sgpa-result-btn" id="result_s4"></p>
+                                </div>
+                                <div class="cgpa-div-result-btn">
+                                    <p class="cgpa-result-btn" id="cgpa_result_s4">
+                                    </p>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <br><br>
+                        <div class="S5_SGPA">
+                            <hr width="100%">
+                            <span></span>
+                            <h1 style="text-align:center;">S5</h1>
+                            <table class="table table-hover">
+
+                                <tr>
+                                    <th class="texthead">Subject Code</th>
+                                    <th class=texthead>Credit</th>
+                                    <th class=texthead>Grade</th>
+                                </tr>
+
+                                <tr>
+                                    <td><input class=text value="5001" readonly></td>
+                                    <td><input class=text value="4" id="credit_5001" readonly></td>
+                                    <td><select class=text name="" id="grade_5001">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="5031" readonly></td>
+                                    <td><input class=text value="4" id="credit_5031" readonly></td>
+                                    <td><select class=text name="" id="grade_5031">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="5032" readonly></td>
+                                    <td><input class=text value="4" id="credit_5032" readonly></td>
+                                    <td><select class=text name="" id="grade_5032">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="5035" readonly></td>
+                                    <td><input class=text value="4" id="credit_5035" readonly></td>
+                                    <td><select class=text name="" id="grade_5035">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="5038" readonly></td>
+                                    <td><input class=text value="3" id="credit_5038" readonly></td>
+                                    <td><select class=text name="" id="grade_5038">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="5039" readonly></td>
+                                    <td><input class=text value="3" id="credit_5039" readonly></td>
+                                    <td><select class=text name="" id="grade_5039">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="5009" readonly></td>
+                                    <td><input class=text value="2" id="credit_5009" readonly></td>
+                                    <td><select class=text name="" id="grade_5009">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="btn-result">
+                                <div class="check-btn" style="float: left;"><button type="button"
+                                        class="btn btn-outline-success" id="check_s5">Check ( S5 )</button>
+                                </div>
+                                <div class="sgpa-div-result-btn" >
+                                    <p class="sgpa-result-btn" id="result_s5"></p>
+                                </div>
+                                <div class="cgpa-div-result-btn">
+                                    <p class="cgpa-result-btn" id="cgpa_result_s5">
+                                    </p>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <br><br>
+                        <div class="S6_SGPA">
+                            <hr width="100%">
+                            <span></span>
+                            <h1 style="text-align:center;">S6</h1>
+                            <table class="table table-hover">
+
+                                <tr>
+                                    <th class="texthead">Subject Code</th>
+                                    <th class=texthead>Credit</th>
+                                    <th class=texthead>Grade</th>
+                                </tr>
+
+                                <tr>
+                                    <td><input class=text value="6033" readonly></td>
+                                    <td><input class=text value="5" id="credit_6033" readonly></td>
+                                    <td><select class=text name="" id="grade_6033">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="6031" readonly></td>
+                                    <td><input class=text value="5" id="credit_6031" readonly></td>
+                                    <td><select class=text name="" id="grade_6031">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="6032" readonly></td>
+                                    <td><input class=text value="5" id="credit_6032" readonly></td>
+                                    <td><select class=text name="" id="grade_6032">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="6034" readonly></td>
+                                    <td><input class=text value="4" id="credit_6034" readonly></td>
+                                    <td><select class=text name="" id="grade_6034">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="6038" readonly></td>
+                                    <td><input class=text value="3" id="credit_6038" readonly></td>
+                                    <td><select class=text name="" id="grade_6038">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="6039" readonly></td>
+                                    <td><input class=text value="3" id="credit_6039" readonly></td>
+                                    <td><select class=text name="" id="grade_6039">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input class=text value="6009" readonly></td>
+                                    <td><input class=text value="10" id="credit_6009" readonly></td>
+                                    <td><select class=text name="" id="grade_6009">
+                                            <option value="">Select</option>
+                                            <option value="10">S</option>
+                                            <option value="9">A</option>
+                                            <option value="8">B</option>
+                                            <option value="7">C</option>
+                                            <option value="6">D</option>
+                                            <option value="5">E</option>
+                                            <option value="0">F</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="btn-result">
+                                <div class="check-btn" style="float: left;"><button type="button"
+                                        class="btn btn-outline-success" id="check_s6">Check ( S6 )</button>
+                                </div>
+                                <div class="sgpa-div-result-btn">
+                                    <p class="sgpa-result-btn" id="result_s6"></p>
+                                </div>
+                                <div class="cgpa-div-result-btn">
+                                    <p class="cgpa-result-btn" id="cgpa_result_s6">
+                                    </p>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--jquery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <!--jquery Validation-->
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+        <!--Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
